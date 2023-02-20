@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(236, 249, 253);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 35rem;
+  display: block;
+  border: 1px solid red;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-left: 0.5rem;
+}

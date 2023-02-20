@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="yourname">Your name</label>
+              <input type="text" id="yourname" name="your_name" />
+            </li>
+            <li>
+              <label for="emailaddress">Your E-mail Address</label>
+              <input type="email" id="emailaddress" name="email_address" />
+            </li>
+            <li>
+              <label for="phonenumber">Your Phone Number</label>
+              <input type="tel" id="phonenumber" name="phone_number" />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                name="your_message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </li>
+            <li>
+              <label for="findus">How did you find us?</label>
+              <select name="find_us" id="findus">
+                <option value="Web_search">Web Search</option>
+                <option value="Social_media">Social Media</option>
+                <option value="Friends">Friends</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input type="radio" id="callme" name="call_me" value="call" />
+              <label for="callme">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="sendemail"
+                name="send_email"
+                value="email"
+              />
+              <label for="callme">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" id="reply" name="dont_replay" value="reply" />
+              <label for="callme">Don't reply</label>
+            </li>
+          </ul>
+
+          <input type="checkbox" id="acceptterms" name="accept_terms" />
+        </section>
+        <section>
+          <label for="checkbox">Accept Terms</label>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
