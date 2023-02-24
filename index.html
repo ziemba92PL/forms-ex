@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Forms</title>
   </head>
@@ -51,30 +56,26 @@
           <h2>How should we reply?</h2>
           <ul>
             <li class="form-control-inline">
-              <input type="radio" id="callme" name="call_me" value="call" />
+              <input type="radio" id="callme" name="verify" value="call" />
               <label for="callme">Call me</label>
             </li>
             <li class="form-control-inline">
-              <input
-                type="radio"
-                id="sendemail"
-                name="send_email"
-                value="email"
-              />
+              <input type="radio" id="sendemail" name="verify" value="email" />
               <label for="callme">Send me an email</label>
             </li>
             <li class="form-control-inline">
-              <input type="radio" id="reply" name="dont_replay" value="reply" />
+              <input type="radio" id="reply" name="verify" value="reply" />
               <label for="callme">Don't reply</label>
             </li>
+            <li class="form-control-inline">
+              <input type="checkbox" id="acceptterms" name="accept_terms" />
+              <label for="checkbox">Accept Terms</label>
+            </li>
           </ul>
-
-          <input type="checkbox" id="acceptterms" name="accept_terms" />
         </section>
-        <section>
-          <label for="checkbox">Accept Terms</label>
-          <button type="reset">Clear</button>
-          <button type="submit">Submit</button>
+        <section id="buttons">
+          <button id="reset" type="reset">Clear</button>
+          <button id="submit" type="submit">Submit</button>
         </section>
       </form>
     </main>
